@@ -1,0 +1,47 @@
+.cart{
+    color: white;
+    padding: 10px;
+    background-color: #31b572;
+    width: 28vw;
+    max-width: 230px;
+    min-width: 150px;
+
+    .title-cart{
+        padding-bottom: 15px;
+    }
+
+    .ul-cart{
+        margin-left: 10px;
+        line-height: 1.5;
+    }
+
+    .element{
+        opacity: 0;
+        margin-left: 5px;
+    }
+
+    span:hover{
+        .element{
+            opacity: 1;
+        }
+    }
+
+    .total-cart{
+        padding-top: 15px;
+    }
+
+    button{
+        margin-top: 15px;
+        padding: 5px;
+        width: 125px;
+        height: 35px;
+        color: white;
+        background-color: #31b572;
+        border-radius: 10px;
+        border: 2px solid white;
+
+        &:hover{
+            font-weight: 600;
+        }
+    }
+}
