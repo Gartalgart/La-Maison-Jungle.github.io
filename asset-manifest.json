@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/La-Maison-Jungle.github.io/static/css/main.3d8fad24.css",
+    "main.js": "/La-Maison-Jungle.github.io/static/js/main.2092b87f.js",
+    "static/media/olivier.jpg": "/La-Maison-Jungle.github.io/static/media/olivier.b2908b40d9fb7f86626b.jpg",
+    "static/media/monstera.jpg": "/La-Maison-Jungle.github.io/static/media/monstera.6257bc6b1e699fa6dde1.jpg",
+    "static/media/basil.jpg": "/La-Maison-Jungle.github.io/static/media/basil.be00474e950eb5af0054.jpg",
+    "static/media/cactus.jpg": "/La-Maison-Jungle.github.io/static/media/cactus.a71c2062a926cb3d5db8.jpg",
+    "static/media/pothos.jpg": "/La-Maison-Jungle.github.io/static/media/pothos.d72dc0ac2f240d84c9d7.jpg",
+    "static/media/lyrata.jpg": "/La-Maison-Jungle.github.io/static/media/lyrata.2e915120c952bdb7066c.jpg",
+    "static/media/mint.jpg": "/La-Maison-Jungle.github.io/static/media/mint.b83a3d2e0c1c1cda808a.jpg",
+    "static/media/calathea.jpg": "/La-Maison-Jungle.github.io/static/media/calathea.455c33e2bd3e5509c907.jpg",
+    "static/media/succulent.jpg": "/La-Maison-Jungle.github.io/static/media/succulent.f4329849930298a9e46b.jpg",
+    "index.html": "/La-Maison-Jungle.github.io/index.html",
+    "main.3d8fad24.css.map": "/La-Maison-Jungle.github.io/static/css/main.3d8fad24.css.map",
+    "main.2092b87f.js.map": "/La-Maison-Jungle.github.io/static/js/main.2092b87f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d8fad24.css",
+    "static/js/main.2092b87f.js"
+  ]
+}
