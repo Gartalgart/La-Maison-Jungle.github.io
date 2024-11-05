@@ -1,0 +1,97 @@
+.ShoppingList {
+  margin-left: 30px;
+  min-height: 850px;
+  width: 100%;
+}
+.ShoppingList .title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.ShoppingList .category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -30px;
+  gap: 30px;
+}
+.ShoppingList .category .selectCategory {
+  margin-top: 10px;
+  padding-left: 10px;
+  height: 30px;
+  color: white;
+  font-weight: 600;
+  background-color: #21794C;
+  border-radius: 10px;
+  border: none;
+}
+.ShoppingList .category button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  color: white;
+  background-color: #21794C;
+  border-radius: 10px;
+  border: none;
+}
+.ShoppingList .category button:hover {
+  font-weight: 600;
+}
+.ShoppingList .ulPlant {
+  display: flex;
+  width: 105%;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  right: 40px;
+  top: 40px;
+}
+.ShoppingList .ulPlant .plant {
+  margin: 25px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.ShoppingList .ulPlant .plant .imagePlant {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  margin-bottom: -45px;
+  object-fit: cover;
+  transition: width 0.2s ease-in-out;
+}
+.ShoppingList .ulPlant .plant .imagePlant:hover {
+  width: 275px;
+}
+.ShoppingList .ulPlant .plant .imagePlant:hover ~ .price {
+  transform: translateX(25px);
+}
+.ShoppingList .ulPlant .plant .price {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  background-color: #31b572;
+  border-radius: 10px 20px 10px;
+  position: relative;
+  left: 200px;
+  bottom: 205px;
+  transition: transform 0.2s ease-in-out;
+}
+.ShoppingList .ulPlant .plant button {
+  margin-top: 5px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: #21794C;
+  border-radius: 10px;
+  border: none;
+}
+.ShoppingList .ulPlant .plant button:hover {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=shoppingList.css.map */

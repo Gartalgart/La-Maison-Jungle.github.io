@@ -19,7 +19,8 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.2.0",
+    "sass": "^1.80.6"
   },
   "resolutions": {
     "@babel/core": "^7.25.8"
@@ -29,6 +30,7 @@
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "watch-sass": "sass --watch src/style/scss:src/style",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

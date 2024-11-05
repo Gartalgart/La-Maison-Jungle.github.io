@@ -1,0 +1,38 @@
+@media screen and (max-width: 500px) {
+  .ShoppingList {
+    max-width: 225px;
+  }
+  .ShoppingList .category {
+    justify-content: flex-start;
+    width: 220px;
+    gap: 20px;
+  }
+  .ShoppingList .category .selectCategory {
+    width: 100px;
+  }
+  .ShoppingList .category button {
+    width: 100px;
+  }
+  .ShoppingList .ulPlant {
+    right: 20px;
+  }
+  .ShoppingList .ulPlant .plant .imagePlant {
+    height: 200px;
+    width: 200px;
+    margin-bottom: -35px;
+  }
+  .ShoppingList .ulPlant .plant .imagePlant:hover {
+    width: 200px;
+  }
+  .ShoppingList .ulPlant .plant .imagePlant:hover ~ .price {
+    transform: translateX(0);
+  }
+  .ShoppingList .ulPlant .plant .price {
+    height: 40px;
+    width: 40px;
+    left: 160px;
+    bottom: 155px;
+  }
+}
+
+/*# sourceMappingURL=responsive500.css.map */

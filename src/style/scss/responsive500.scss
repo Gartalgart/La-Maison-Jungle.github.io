@@ -1,0 +1,45 @@
+@media screen  and (max-width: 500px) {
+    .ShoppingList{
+        max-width: 225px;
+        .category{
+            justify-content: flex-start;
+            width: 220px;
+            gap: 20px;
+            
+            .selectCategory{
+                width: 100px;
+            }
+
+            button{
+                width: 100px;
+            }
+        }
+
+        .ulPlant{
+            right: 20px;
+            .plant{
+                .imagePlant{
+                    height: 200px;
+                    width: 200px;
+                    margin-bottom: -35px;
+
+                    &:hover{
+                        width: 200px;
+
+                        ~.price{
+                            transform: translateX(0);
+                        }
+                    }
+                }
+
+                .price{
+                    height: 40px;
+                    width: 40px;
+                    left: 160px;
+                    bottom: 155px;
+                }
+            }
+        }
+    }
+    
+}

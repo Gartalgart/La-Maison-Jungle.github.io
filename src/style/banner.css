@@ -1,0 +1,17 @@
+.banner {
+  color: black;
+  text-align: right;
+  padding: 32px;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.banner .logo-banner {
+  height: 45px;
+  width: 45px;
+}
+.banner .title-banner {
+  padding-left: 32px;
+}
+
+/*# sourceMappingURL=banner.css.map */

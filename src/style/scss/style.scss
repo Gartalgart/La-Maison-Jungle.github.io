@@ -1,7 +1,8 @@
-@import 'banner.scss';
-@import 'cart.scss';
-@import 'shoppingList.scss';
-@import 'footer.scss';
+@use 'banner.scss';
+@use 'cart.scss';
+@use 'shoppingList.scss';
+@use 'footer.scss';
+@use 'responsive500.scss';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
