@@ -1,0 +1,172 @@
+.page{
+    min-height: 850px;
+
+    .mainImage img{
+        height: 500px;
+        width: 500px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 50px;
+    }
+
+    .container{
+        .top{
+            display: flex;
+
+            .hook{
+                margin: 50px;
+                position: absolute;
+                right: 150px;
+                top: 150px;
+                width: 800px;
+                
+                span{
+                    font-size: 40px;
+                }
+
+                .titlePrice{
+                    margin-bottom: 75px;
+
+                    h1{
+                        color: #1D5E3C;
+                        font-size: 32px;
+                        font-weight: 600;
+                    }
+
+                    p{
+                        color: #21794C;
+                        font-size: 24px;
+                        font-weight: 500;
+                    }
+                }
+
+                .sunInfo, .waterInfo{
+                    display: flex;
+                    margin-bottom: 20px;
+
+                    p{
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin: 10px 0 0 5px
+                    }
+                }
+
+                .didUKnow{
+                    margin-top: 100px;
+                    
+                    .title{
+                        color: #21794C;
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    } 
+
+                    .text{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .bottom{
+            display: flex;
+            gap: 100px;
+
+            .left{
+                width: 30vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 30px;
+
+                p{
+                    font-size: 24px;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+                }
+                .selectPlant{
+                    display: flex;
+                    align-items: center;
+                    
+                    .ulContaint{
+                        margin: 0 20px;
+
+                        ul{
+                            display: flex;
+                            gap: 20px;
+                            list-style: none;
+
+                            img{
+                                height: 150px;
+                                width: 150px;
+                                border-radius: 5px;
+
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+            .right{
+                width: 50vw;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 100px;
+
+                .quantityButton{
+                    display: flex;
+
+                    .less, .more{
+                        height: 100px;
+                        width: 100px;
+                        background-color: black;
+                        border: none;
+                        color: white;
+                        font-size: 32px;
+
+                        &:hover{
+                            font-size: 36px;
+                        }
+                    }
+
+                    p{
+                        height: 100px;
+                        width: 150px;
+                        background-color: white;
+                        border: 2px solid black;
+                        font-size: 32px; 
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+
+        
+
+            .addCart{
+                .addCartButton{
+                    width: 350px;
+                    height: 100px;
+                    border: 2px solid #21794C;
+                    border-radius: 15px;
+                    color: #21794C;
+                    background-color: white;
+                    font-size: 32px;
+
+                    &:hover{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+

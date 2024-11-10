@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 function CareScale({ scaleValue, careType }) {
     // Déclare un tableau de valeurs de référence pour le niveau de soin (1, 2, 3)

@@ -4,14 +4,22 @@
   padding: 32px;
   border-bottom: 3px solid black;
   display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.banner .burgerContainer {
+  display: none;
+}
+.banner .titleBanner {
+  display: flex;
   flex-direction: row-reverse;
 }
-.banner .logo-banner {
+.banner .titleBanner .logo-banner {
   height: 45px;
   width: 45px;
 }
-.banner .title-banner {
-  padding-left: 32px;
+.banner .titleBanner .title-banner {
+  padding-left: 16px;
 }
 
 /*# sourceMappingURL=banner.css.map */

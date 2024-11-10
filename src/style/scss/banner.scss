@@ -1,17 +1,28 @@
+
 .banner{
     color: black;
     text-align: right;
     padding: 32px;
     border-bottom: 3px solid black;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-direction: row;
 
-    .logo-banner{
-        height: 45px;
-        width: 45px;
+    .burgerContainer{
+        display: none;
     }
 
-    .title-banner{
-        padding-left: 32px;
+    .titleBanner{
+        display: flex;
+        flex-direction: row-reverse;
+
+        .logo-banner{
+            height: 45px;
+            width: 45px;
+        }
+
+        .title-banner{
+            padding-left: 16px;
+        }
     }
 }

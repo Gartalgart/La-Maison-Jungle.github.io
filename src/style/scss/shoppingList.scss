@@ -58,38 +58,76 @@
             display: flex;
             flex-direction: column;
 
-            .imagePlant{
-                height: 250px;
-                width: 250px;
-                border-radius: 20px;
-                margin-bottom: -45px;
-                object-fit: cover;
-                transition: width 0.2s ease-in-out;
+            .plantContainer {
+                position: relative;
 
-                &:hover{
+                &:hover .imagePlant {
                     width: 275px;
+                }
 
-                    ~.price{
-                        transform: translateX(25px);
+                &:hover .price {
+                    transform: translateX(25px);
+                }
+
+                &:hover .details {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .imagePlant {
+                    height: 250px;
+                    width: 250px;
+                    border-radius: 20px;
+                    margin-bottom: -45px;
+                    object-fit: cover;
+                    transition: width 0.2s ease-in-out;
+                }
+
+                .price {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: 500;
+                    background-color: #31b572;
+                    border-radius: 10px 20px 10px;
+                    position: relative;
+                    left: 200px;
+                    bottom: 209px;
+                    transition: transform 0.2s ease-in-out;
+                    z-index: 1;
+                }
+
+                .details {
+                    height: 250px;
+                    width: 275px;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    font-weight: 300;
+                    font-size: 24px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+                    pointer-events: none;
+                    z-index: 2;
+
+                    a {
+                        pointer-events: auto;
+                        color: inherit;
+                        text-decoration: none;
                     }
                 }
             }
 
-            .price{
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-weight: 500;
-                background-color: #31b572;
-                border-radius: 10px 20px 10px;
-                position: relative;
-                left: 200px;
-                bottom: 205px;
-                transition: transform 0.2s ease-in-out
-            }
+            
 
             button{
                 margin-top: 5px;

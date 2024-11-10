@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { plantList } from "./datas/plantList";
+import React from 'react';
 import PlantItem from "./PlantItem";
 
 function ShoppingList({addToCart}){

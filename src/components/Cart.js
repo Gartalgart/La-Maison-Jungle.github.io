@@ -1,15 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' //import la librairy fontawesome
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'; //imort individuellement l'icon
 
-function Cart({cartItems, clearCart, clearElement}){
+function Cart({cartItems, clearCart, clearElement, isCartActive}){
     const title = 'Panier';
 
     // Calcul du prix total
     const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
     
     return(
-        <div className="cart">
+        <div className={`cart ${isCartActive ? 'active' : ''}`}>
             <h2 className="title-cart">{title.toUpperCase()}</h2>
             {cartItems.length === 0 ? (
                 <p>Votre panier est vide</p>

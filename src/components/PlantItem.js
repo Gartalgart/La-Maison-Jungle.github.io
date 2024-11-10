@@ -1,11 +1,17 @@
 import CareScale from "./CareScale";
-import { plantList } from "./datas/plantList";
+import React from 'react';
+import { Link } from "react-router-dom";
 
 function PlantItem({id, image, name, price, water, light, addToCart}){
     return (
         <li key={id} className="plant">
-            <img src={image} alt={`${name} image`} className="imagePlant"/>
-            <div className="price">{price}€</div>
+            <div className="plantContainer">
+                <img src={image} alt={`${name} image`} className="imagePlant"/>
+                <div className="details">
+                    <Link to={`/plant/${id}`} onClick={() => console.log("Link clicked")}>Détaille</Link> {/* Redirection vers la page de détail */}
+                </div>
+                <div className="price">{price}€</div>
+            </div>
                 {name}
                 <CareScale careType='water' scaleValue={water}/>
                 <CareScale careType='light' scaleValue={light}/>
