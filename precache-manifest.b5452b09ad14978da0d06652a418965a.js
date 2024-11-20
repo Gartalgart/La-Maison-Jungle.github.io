@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf71bcd047977399ea25ef85c6dec74f",
+    "revision": "3c8a4268f10bbb04edff44cc44f7d5dd",
     "url": "/La-Maison-Jungle.github.io/index.html"
   },
   {
-    "revision": "868fc522e3d3a9caaf7f",
-    "url": "/La-Maison-Jungle.github.io/static/css/main.a46f5e7a.chunk.css"
+    "revision": "affeeaedef79f9dde6e6",
+    "url": "/La-Maison-Jungle.github.io/static/css/main.7b2375c7.chunk.css"
   },
   {
-    "revision": "6931010fa03c830e79a5",
-    "url": "/La-Maison-Jungle.github.io/static/js/2.d767661a.chunk.js"
+    "revision": "341df081e933c629975d",
+    "url": "/La-Maison-Jungle.github.io/static/js/2.1cac7cb4.chunk.js"
   },
   {
-    "revision": "868fc522e3d3a9caaf7f",
-    "url": "/La-Maison-Jungle.github.io/static/js/main.ea4cb0ac.chunk.js"
+    "revision": "affeeaedef79f9dde6e6",
+    "url": "/La-Maison-Jungle.github.io/static/js/main.83e865d1.chunk.js"
   },
   {
     "revision": "77475317405901e70321",
