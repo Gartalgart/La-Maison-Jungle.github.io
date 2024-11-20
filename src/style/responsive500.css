@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (max-width: 500px) {
   .banner {
     align-items: center;
@@ -11,9 +12,8 @@
   .banner .burgerContainer .burgerMenu {
     font-size: 32px;
     color: #1D5E3C;
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    position: relative;
+    right: 20px;
     cursor: pointer;
     z-index: 1001;
   }
@@ -24,7 +24,7 @@
     position: absolute;
     top: 112px;
     left: 0;
-    height: 50vh;
+    height: 90vh;
     background-color: rgba(29, 94, 60, 0.5);
     border-radius: 0 0 10px 0;
     transform: translateX(100%);
@@ -35,6 +35,68 @@
   .cart.active {
     display: block;
     transform: translateX(0);
+  }
+  .cart .valid {
+    width: 130px;
+    background-color: rgba(29, 94, 60, 0.5);
+  }
+  .cart .clear {
+    background-color: rgba(29, 94, 60, 0);
+  }
+  .cart .login .sentence {
+    font-size: 14px;
+    width: 140px;
+  }
+  .cart .login .connect {
+    position: relative;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgba(29, 94, 60, 0.5);
+    border: 2px solid white;
+    font-size: 12px;
+    color: white;
+    z-index: 2;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Ajout d'un espace entre le texte et l'icône */
+  }
+  .cart .login .connect::before {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 1;
+  }
+  .cart .login .connect:hover::before {
+    transform: translateX(0);
+  }
+  .cart .login .connect:hover {
+    color: rgba(29, 94, 60, 0.5);
+    width: 130px;
+  }
+  .cart .login .connect .arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: rgba(29, 94, 60, 0.5);
+    transform: translateX(-100px); /* Place initiale de la flèche hors du bouton */
+    opacity: 0; /* Rend la flèche invisible par défaut */
+    transition: transform 0.5s ease, opacity 0.3s ease;
+  }
+  .cart .login .connect:hover .arrow {
+    transform: translateX(50px); /* Déplace la flèche dans le bouton */
+    opacity: 1; /* Rend la flèche visible */
+    z-index: 1;
   }
   .ShoppingList {
     max-width: 225px;
@@ -65,7 +127,7 @@
     width: 200px;
   }
   .ShoppingList .ulPlant .plant .imagePlant:hover ~ .price {
-    transform: translateX(0);
+    transform: translateX(25px);
   }
   .ShoppingList .ulPlant .plant .price {
     height: 40px;
@@ -80,8 +142,8 @@
     margin-top: 50px;
   }
   .page .mainImage img {
-    width: 375px;
-    height: 375px;
+    width: 325px;
+    height: 325px;
     margin: 25px;
   }
   .page .container {
@@ -94,11 +156,11 @@
   }
   .page .container .top .hook {
     text-align: center;
-    margin: 25px;
+    margin: 25px 5px;
     position: relative;
-    top: 0;
+    top: -50px;
     right: 0;
-    width: 450px;
+    width: 400px;
   }
   .page .container .top .hook span {
     font-size: 32px;
@@ -106,8 +168,8 @@
   .page .container .top .hook .titlePrice {
     margin-bottom: 50px;
     position: relative;
-    bottom: 900px;
-    left: -40px;
+    bottom: 800px;
+    left: -20px;
   }
   .page .container .top .hook .titlePrice h1 {
     font-size: 32px;
@@ -117,12 +179,12 @@
   }
   .page .container .top .hook .sunInfo, .page .container .top .hook .waterInfo {
     margin-bottom: 20px;
+    width: 350px;
   }
   .page .container .top .hook .sunInfo p, .page .container .top .hook .waterInfo p {
-    font-size: 24px;
+    font-size: 16px;
     margin: 10px 0 0 5px;
-    width: 400px;
-    text-align: left;
+    text-align: center;
   }
   .page .container .top .hook .didUKnow {
     margin: 50px 30px 50px 0;
@@ -140,6 +202,10 @@
   }
   .page .container .bottom .left {
     width: auto;
+    margin-left: 5px;
+  }
+  .page .container .bottom .left p {
+    margin-left: auto;
   }
   .page .container .bottom .left .selectPlant .ulContaint {
     margin-left: 10px;
@@ -174,6 +240,60 @@
     width: 300px;
     height: 75px;
     font-size: 32px;
+  }
+  .page2 {
+    max-width: 350px;
+  }
+  .page2 .title1 {
+    font-size: 24px;
+  }
+  .page2 .emptyCard {
+    font-size: 16px;
+  }
+  .page2 .reviewOrder .ulReview {
+    width: 110%;
+  }
+  .page2 .reviewOrder .ulReview .review {
+    margin: 7px;
+  }
+  .page2 .reviewOrder .ulReview .review .imagePlant {
+    height: 100px;
+    width: 100px;
+  }
+  .page2 .reviewOrder .ulReview .review button {
+    margin: 5px;
+    width: 100px;
+  }
+  .page2 .order_form {
+    flex-direction: column;
+    gap: 50px;
+    margin: 20p 0 50px 200px;
+  }
+  .page2 .order_form h2 {
+    font-size: 20px;
+  }
+  .page2 .order_form .orderSummary .container {
+    margin-left: -150px;
+  }
+  .page2 .order_form .orderSummary .container .title2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .page2 .order_form .orderSummary .container .article, .page2 .order_form .orderSummary .container .tax, .page2 .order_form .orderSummary .container .totale {
+    gap: 150px;
+  }
+  .page2 .order_form .paye .formulaire {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .page2 .order_form .submit {
+    position: relative;
+    right: 225px;
+  }
+  .loginPage {
+    width: 380px;
+    max-height: 3637px;
+    left: 0;
   }
 }
 

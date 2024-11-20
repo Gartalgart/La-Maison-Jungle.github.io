@@ -1,0 +1,117 @@
+@mixin arrowButton{
+    .connect {
+        position: relative;
+        height: 35px;
+        width: 150px;
+        border-radius: 10px;
+        background-color: #31b572;
+        border: 2px solid white;
+        font-size: 16px;
+        color: white;
+        z-index: 2;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Ajout d'un espace entre le texte et l'icône */
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 35px;
+            width: 180px;
+            border-radius: 10px;
+            background-color: white;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+            z-index: 1;
+        }
+
+        &:hover::before {
+            transform: translateX(0);
+        }
+
+        &:hover {
+            color: #31b572;
+            width: 180px;
+        }
+
+        .arrow {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            color: #31b572;
+            transform: translateX(-100px); /* Place initiale de la flèche hors du bouton */
+            opacity: 0; /* Rend la flèche invisible par défaut */
+            transition: transform 0.5s ease, opacity 0.3s ease;
+        }
+
+        &:hover .arrow {
+            transform: translateX(50px); /* Déplace la flèche dans le bouton */
+            opacity: 1; /* Rend la flèche visible */
+            z-index: 1;
+        }
+    }
+}
+
+@mixin arrowButtonBurger{
+    .connect {
+        position: relative;
+        height: 35px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: rgba(29, 94, 60, 0.5);
+        border: 2px solid white;
+        font-size: 12px;
+        color: white;
+        z-index: 2;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Ajout d'un espace entre le texte et l'icône */
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 35px;
+            width: 130px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+            z-index: 1;
+        }
+
+        &:hover::before {
+            transform: translateX(0);
+        }
+
+        &:hover {
+            color: rgba(29, 94, 60, 0.5);
+            width: 130px;
+        }
+
+        .arrow {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            color: rgba(29, 94, 60, 0.5);
+            transform: translateX(-100px); /* Place initiale de la flèche hors du bouton */
+            opacity: 0; /* Rend la flèche invisible par défaut */
+            transition: transform 0.5s ease, opacity 0.3s ease;
+        }
+
+        &:hover .arrow {
+            transform: translateX(50px); /* Déplace la flèche dans le bouton */
+            opacity: 1; /* Rend la flèche visible */
+            z-index: 1;
+        }
+    }
+}

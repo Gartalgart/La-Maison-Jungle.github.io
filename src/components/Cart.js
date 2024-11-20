@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' //import la librairy fontawesome
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'; //imort individuellement l'icon
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //import la librairy fontawesome
+import { faCircleXmark, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'; //imort individuellement l'icon
 
-function Cart({cartItems, clearCart, clearElement, isCartActive}){
+function Cart({cartItems, clearCart, clearElement, isCartActive, showLogin}){
     const title = 'Panier';
 
     // Calcul du prix total
@@ -29,10 +30,23 @@ function Cart({cartItems, clearCart, clearElement, isCartActive}){
                     ))}
                 </ul>
                 <h3 className="total-cart">Total price: {totalPrice}€</h3>
-                <button onClick={clearCart}>Vider le panier</button>
+                <button className='valid'>
+                    <Link to={'/PlantPaye'}>Valider le panier</Link>
+                </button>
+                <button className='clear' onClick={clearCart}>Vider le panier</button>
             </>  
             )}  
+            <div className='login'>
+                <p className='sentence'>Connecte toi pour pouvoir enregistrer ton Panier</p>
+                <button className='connect' onClick={showLogin}>
+                    Se connecter
+                    <span className='arrow'>
+                        <FontAwesomeIcon icon={faArrowRightLong} size="2xl" />
+                    </span>
+                </button>
+            </div>
         </div>
+       
     )           
 }       
 

@@ -8,14 +8,14 @@ function PlantItem({id, image, name, price, water, light, addToCart}){
             <div className="plantContainer">
                 <img src={image} alt={`${name} image`} className="imagePlant"/>
                 <div className="details">
-                    <Link to={`/plant/${id}`} onClick={() => console.log("Link clicked")}>Détaille</Link> {/* Redirection vers la page de détail */}
+                    <Link to={`/plant/${id}`} onClick={() => console.log("Link clicked")}>Détails</Link> {/* Redirection vers la page de détail */}
                 </div>
                 <div className="price">{price}€</div>
             </div>
                 {name}
                 <CareScale careType='water' scaleValue={water}/>
                 <CareScale careType='light' scaleValue={light}/>
-            <button onClick={() => addToCart(name, price)}>Ajouter</button>
+            <button onClick={() => addToCart(name, price, image)}>Ajouter</button>
         </li>
     )  
 }

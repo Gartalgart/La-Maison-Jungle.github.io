@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .banner {
   color: black;
@@ -24,6 +25,7 @@
 }
 
 .cart {
+  position: relative;
   color: white;
   padding: 10px;
   background-color: #31b572;
@@ -48,18 +50,93 @@
 .cart .total-cart {
   padding-top: 15px;
 }
-.cart button {
+.cart .valid {
   margin-top: 15px;
   padding: 5px;
-  width: 125px;
+  width: 150px;
   height: 35px;
   color: white;
   background-color: #31b572;
   border-radius: 10px;
   border: 2px solid white;
 }
-.cart button:hover {
+.cart .valid:hover {
   font-weight: 600;
+}
+.cart .clear {
+  margin-top: 5px;
+  padding: 5px;
+  width: 125px;
+  height: 35px;
+  color: white;
+  background-color: #31b572;
+  border: none;
+}
+.cart .clear:hover {
+  font-weight: 600;
+}
+.cart .login {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.cart .login .sentence {
+  width: 220px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.cart .login .connect {
+  position: relative;
+  height: 35px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #31b572;
+  border: 2px solid white;
+  font-size: 16px;
+  color: white;
+  z-index: 2;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Ajout d'un espace entre le texte et l'icône */
+}
+.cart .login .connect::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.cart .login .connect:hover::before {
+  transform: translateX(0);
+}
+.cart .login .connect:hover {
+  color: #31b572;
+  width: 180px;
+}
+.cart .login .connect .arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  color: #31b572;
+  transform: translateX(-100px); /* Place initiale de la flèche hors du bouton */
+  opacity: 0; /* Rend la flèche invisible par défaut */
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+.cart .login .connect:hover .arrow {
+  transform: translateX(50px); /* Déplace la flèche dans le bouton */
+  opacity: 1; /* Rend la flèche visible */
+  z-index: 1;
 }
 
 .ShoppingList {
@@ -112,7 +189,7 @@
   top: 40px;
 }
 .ShoppingList .ulPlant .plant {
-  margin: 25px 30px 50px 30px;
+  margin: 5px 30px 50px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -351,6 +428,233 @@
   font-weight: 600;
 }
 
+.page2 .title1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 20px;
+}
+.page2 .emptyCard {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.page2 .reviewOrder .ulReview {
+  display: flex;
+  justify-content: center;
+  width: 105%;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.page2 .reviewOrder .ulReview .review {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.page2 .reviewOrder .ulReview .review .imagePlant {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.page2 .reviewOrder .ulReview .review span {
+  margin-bottom: 5px;
+}
+.page2 .reviewOrder .ulReview .review button {
+  margin: 5px 0 0 20px;
+  display: flex;
+  padding: 5px;
+  width: 150px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to left, #2a8556 0%, #1D5E3C 100%);
+}
+.page2 .reviewOrder .ulReview .review button:hover {
+  font-weight: 700;
+}
+.page2 .order_form {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  margin: 20px 0 50px 200px;
+}
+.page2 .order_form h2 {
+  font-size: 24px;
+  color: #1D5E3C;
+}
+.page2 .order_form .orderSummary .container {
+  margin: 10px;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-radius: 20px;
+}
+.page2 .order_form .orderSummary .container .title2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #1D5E3C;
+}
+.page2 .order_form .orderSummary .container .article, .page2 .order_form .orderSummary .container .tax, .page2 .order_form .orderSummary .container .totale {
+  display: flex;
+  gap: 250px;
+  margin-bottom: 20px;
+}
+.page2 .order_form .orderSummary .container .article .priceTax, .page2 .order_form .orderSummary .container .tax .priceTax, .page2 .order_form .orderSummary .container .totale .priceTax {
+  position: relative;
+  left: 15px;
+}
+.page2 .order_form .orderSummary .container .article .totalPrice, .page2 .order_form .orderSummary .container .tax .totalPrice, .page2 .order_form .orderSummary .container .totale .totalPrice {
+  position: relative;
+  right: 5px;
+}
+.page2 .order_form .paye .formulaire {
+  display: flex;
+  gap: 75px;
+}
+.page2 .order_form .paye .formulaire .payment {
+  margin-top: 20px;
+}
+.page2 .order_form .paye .formulaire .name, .page2 .order_form .paye .formulaire .email, .page2 .order_form .paye .formulaire .adress, .page2 .order_form .paye .formulaire .ville, .page2 .order_form .paye .formulaire .pays, .page2 .order_form .paye .formulaire .codePostale,
+.page2 .order_form .paye .formulaire .cardAccepte, .page2 .order_form .paye .formulaire .nameCard, .page2 .order_form .paye .formulaire .numberCard, .page2 .order_form .paye .formulaire .expDate, .page2 .order_form .paye .formulaire .crypto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 300px;
+}
+.page2 .order_form .paye .formulaire .name span, .page2 .order_form .paye .formulaire .email span, .page2 .order_form .paye .formulaire .adress span, .page2 .order_form .paye .formulaire .ville span, .page2 .order_form .paye .formulaire .pays span, .page2 .order_form .paye .formulaire .codePostale span,
+.page2 .order_form .paye .formulaire .cardAccepte span, .page2 .order_form .paye .formulaire .nameCard span, .page2 .order_form .paye .formulaire .numberCard span, .page2 .order_form .paye .formulaire .expDate span, .page2 .order_form .paye .formulaire .crypto span {
+  margin-bottom: 5px;
+}
+.page2 .order_form .paye .formulaire .name input, .page2 .order_form .paye .formulaire .email input, .page2 .order_form .paye .formulaire .adress input, .page2 .order_form .paye .formulaire .ville input, .page2 .order_form .paye .formulaire .pays input, .page2 .order_form .paye .formulaire .codePostale input,
+.page2 .order_form .paye .formulaire .cardAccepte input, .page2 .order_form .paye .formulaire .nameCard input, .page2 .order_form .paye .formulaire .numberCard input, .page2 .order_form .paye .formulaire .expDate input, .page2 .order_form .paye .formulaire .crypto input {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.page2 .order_form .paye .formulaire .name .card, .page2 .order_form .paye .formulaire .email .card, .page2 .order_form .paye .formulaire .adress .card, .page2 .order_form .paye .formulaire .ville .card, .page2 .order_form .paye .formulaire .pays .card, .page2 .order_form .paye .formulaire .codePostale .card,
+.page2 .order_form .paye .formulaire .cardAccepte .card, .page2 .order_form .paye .formulaire .nameCard .card, .page2 .order_form .paye .formulaire .numberCard .card, .page2 .order_form .paye .formulaire .expDate .card, .page2 .order_form .paye .formulaire .crypto .card {
+  display: flex;
+  gap: 30px;
+}
+.page2 .order_form .paye .formulaire .name .card .cartItem, .page2 .order_form .paye .formulaire .email .card .cartItem, .page2 .order_form .paye .formulaire .adress .card .cartItem, .page2 .order_form .paye .formulaire .ville .card .cartItem, .page2 .order_form .paye .formulaire .pays .card .cartItem, .page2 .order_form .paye .formulaire .codePostale .card .cartItem,
+.page2 .order_form .paye .formulaire .cardAccepte .card .cartItem, .page2 .order_form .paye .formulaire .nameCard .card .cartItem, .page2 .order_form .paye .formulaire .numberCard .card .cartItem, .page2 .order_form .paye .formulaire .expDate .card .cartItem, .page2 .order_form .paye .formulaire .crypto .card .cartItem {
+  color: #1D5E3C;
+}
+.page2 .order_form .paye .formulaire .cardAccepte, .page2 .order_form .paye .formulaire .nameCard, .page2 .order_form .paye .formulaire .numberCard, .page2 .order_form .paye .formulaire .expDate, .page2 .order_form .paye .formulaire .crypto {
+  margin-bottom: 35px;
+}
+.page2 .order_form .submit {
+  display: flex;
+  margin: 20px 0 0 300px;
+  padding: 5px;
+  width: 170px;
+  height: 40px;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to left, #2a8556 0%, #1D5E3C 100%);
+}
+.page2 .order_form .submit:hover {
+  font-weight: 700;
+}
+
+.loginPage {
+  background-color: rgba(100, 100, 100, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 1620px;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 112px;
+  left: 230px;
+  z-index: 2000;
+}
+.loginPage .container {
+  position: relative;
+  height: 400px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  /* Par défaut, la section Sign Up est cachée */
+  /* Quand Sign Up est active */
+}
+.loginPage .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.loginPage .container .toggleButton {
+  background-color: white;
+  border: none;
+  color: #21794C;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 3px;
+}
+.loginPage .container .close-button {
+  margin: 10px 35%;
+  height: 25px;
+  width: 100px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to left, #2a8556 0%, #1D5E3C 100%);
+}
+.loginPage .container h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.loginPage .container input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.loginPage .container .signIn, .loginPage .container .signUp {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: white;
+  transition: transform 0.1s ease-in-out;
+}
+.loginPage .container .signUp {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.loginPage .container .signUp.active {
+  z-index: 10;
+  transform: translateX(0);
+  opacity: 1;
+}
+.loginPage .container .connectButton {
+  height: 30px;
+  width: 150px;
+  margin: 10px auto;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to left, #2a8556 0%, #1D5E3C 100%);
+}
+.loginPage .container p {
+  margin: 10px 0;
+}
+
 @media screen and (max-width: 500px) {
   .banner {
     align-items: center;
@@ -364,9 +668,8 @@
   .banner .burgerContainer .burgerMenu {
     font-size: 32px;
     color: #1D5E3C;
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    position: relative;
+    right: 20px;
     cursor: pointer;
     z-index: 1001;
   }
@@ -377,7 +680,7 @@
     position: absolute;
     top: 112px;
     left: 0;
-    height: 50vh;
+    height: 90vh;
     background-color: rgba(29, 94, 60, 0.5);
     border-radius: 0 0 10px 0;
     transform: translateX(100%);
@@ -388,6 +691,68 @@
   .cart.active {
     display: block;
     transform: translateX(0);
+  }
+  .cart .valid {
+    width: 130px;
+    background-color: rgba(29, 94, 60, 0.5);
+  }
+  .cart .clear {
+    background-color: rgba(29, 94, 60, 0);
+  }
+  .cart .login .sentence {
+    font-size: 14px;
+    width: 140px;
+  }
+  .cart .login .connect {
+    position: relative;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgba(29, 94, 60, 0.5);
+    border: 2px solid white;
+    font-size: 12px;
+    color: white;
+    z-index: 2;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Ajout d'un espace entre le texte et l'icône */
+  }
+  .cart .login .connect::before {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 1;
+  }
+  .cart .login .connect:hover::before {
+    transform: translateX(0);
+  }
+  .cart .login .connect:hover {
+    color: rgba(29, 94, 60, 0.5);
+    width: 130px;
+  }
+  .cart .login .connect .arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: rgba(29, 94, 60, 0.5);
+    transform: translateX(-100px); /* Place initiale de la flèche hors du bouton */
+    opacity: 0; /* Rend la flèche invisible par défaut */
+    transition: transform 0.5s ease, opacity 0.3s ease;
+  }
+  .cart .login .connect:hover .arrow {
+    transform: translateX(50px); /* Déplace la flèche dans le bouton */
+    opacity: 1; /* Rend la flèche visible */
+    z-index: 1;
   }
   .ShoppingList {
     max-width: 225px;
@@ -418,7 +783,7 @@
     width: 200px;
   }
   .ShoppingList .ulPlant .plant .imagePlant:hover ~ .price {
-    transform: translateX(0);
+    transform: translateX(25px);
   }
   .ShoppingList .ulPlant .plant .price {
     height: 40px;
@@ -433,8 +798,8 @@
     margin-top: 50px;
   }
   .page .mainImage img {
-    width: 375px;
-    height: 375px;
+    width: 325px;
+    height: 325px;
     margin: 25px;
   }
   .page .container {
@@ -447,11 +812,11 @@
   }
   .page .container .top .hook {
     text-align: center;
-    margin: 25px;
+    margin: 25px 5px;
     position: relative;
-    top: 0;
+    top: -50px;
     right: 0;
-    width: 450px;
+    width: 400px;
   }
   .page .container .top .hook span {
     font-size: 32px;
@@ -459,8 +824,8 @@
   .page .container .top .hook .titlePrice {
     margin-bottom: 50px;
     position: relative;
-    bottom: 900px;
-    left: -40px;
+    bottom: 800px;
+    left: -20px;
   }
   .page .container .top .hook .titlePrice h1 {
     font-size: 32px;
@@ -470,12 +835,12 @@
   }
   .page .container .top .hook .sunInfo, .page .container .top .hook .waterInfo {
     margin-bottom: 20px;
+    width: 350px;
   }
   .page .container .top .hook .sunInfo p, .page .container .top .hook .waterInfo p {
-    font-size: 24px;
+    font-size: 16px;
     margin: 10px 0 0 5px;
-    width: 400px;
-    text-align: left;
+    text-align: center;
   }
   .page .container .top .hook .didUKnow {
     margin: 50px 30px 50px 0;
@@ -493,6 +858,10 @@
   }
   .page .container .bottom .left {
     width: auto;
+    margin-left: 5px;
+  }
+  .page .container .bottom .left p {
+    margin-left: auto;
   }
   .page .container .bottom .left .selectPlant .ulContaint {
     margin-left: 10px;
@@ -527,6 +896,60 @@
     width: 300px;
     height: 75px;
     font-size: 32px;
+  }
+  .page2 {
+    max-width: 350px;
+  }
+  .page2 .title1 {
+    font-size: 24px;
+  }
+  .page2 .emptyCard {
+    font-size: 16px;
+  }
+  .page2 .reviewOrder .ulReview {
+    width: 110%;
+  }
+  .page2 .reviewOrder .ulReview .review {
+    margin: 7px;
+  }
+  .page2 .reviewOrder .ulReview .review .imagePlant {
+    height: 100px;
+    width: 100px;
+  }
+  .page2 .reviewOrder .ulReview .review button {
+    margin: 5px;
+    width: 100px;
+  }
+  .page2 .order_form {
+    flex-direction: column;
+    gap: 50px;
+    margin: 20p 0 50px 200px;
+  }
+  .page2 .order_form h2 {
+    font-size: 20px;
+  }
+  .page2 .order_form .orderSummary .container {
+    margin-left: -150px;
+  }
+  .page2 .order_form .orderSummary .container .title2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .page2 .order_form .orderSummary .container .article, .page2 .order_form .orderSummary .container .tax, .page2 .order_form .orderSummary .container .totale {
+    gap: 150px;
+  }
+  .page2 .order_form .paye .formulaire {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .page2 .order_form .submit {
+    position: relative;
+    right: 225px;
+  }
+  .loginPage {
+    width: 380px;
+    max-height: 3637px;
+    left: 0;
   }
 }
 * {

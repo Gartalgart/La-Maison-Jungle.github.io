@@ -1,0 +1,164 @@
+.page2{
+    .title1{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 0 20px
+    }
+
+    .emptyCard{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .reviewOrder{
+        .ulReview{
+            display: flex;
+            justify-content: center;
+            width: 105%;
+            flex-wrap: wrap;
+            list-style: none;
+
+            .review{
+                display: flex;
+                flex-direction: column;
+                margin: 30px;
+
+                .imagePlant{
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    margin-bottom: 10px;
+                }
+
+                span{
+                    margin-bottom: 5px;
+                }
+
+                button{
+                    margin: 5px 0 0 20px;
+                    display: flex;
+                    padding: 5px;
+                    width: 150px;
+                    height: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                    background: linear-gradient(to left, #2a8556 0% ,#1D5E3C 100%);
+
+                    &:hover{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
+    .order_form{
+        display: flex;
+        gap: 200px;
+        align-items: center;
+        margin: 20px 0 50px 200px;
+
+        h2{
+            font-size: 24px;
+            color: #1D5E3C;
+        }
+
+        .orderSummary{
+            .container{
+                margin: 10px;
+                padding: 10px;
+                border: 0.5px solid black;
+                border-radius: 20px;
+
+                .title2{
+                    font-size: 24px;
+                    margin-bottom: 30px;
+                    color: #1D5E3C;
+                }
+
+                .article, .tax, .totale{
+                    display: flex;
+                    gap: 250px;
+                    margin-bottom: 20px;
+
+                    .priceTax{
+                        position: relative;
+                        left: 15px;
+                    }
+
+                    .totalPrice{
+                        position: relative;
+                        right: 5px;
+                    }
+                }
+            }
+        }
+
+        .paye{
+            .formulaire{
+                display: flex;
+                gap: 75px;
+
+                .payment{
+                    margin-top: 20px;
+                }
+
+                .name, .email, .adress, .ville, .pays, .codePostale,
+                .cardAccepte, .nameCard, .numberCard, .expDate, .crypto{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    width: 300px;
+
+                    span{
+                        margin-bottom: 5px;
+                    }
+
+                    input{
+                        padding: 5px;
+                        border: none;
+                        border-bottom: 1px solid grey;
+                    }
+
+                    .card{
+                        display: flex;
+                        gap: 30px;
+
+                        .cartItem{
+                            color: #1D5E3C;
+                        }
+                    }
+                }
+
+                .cardAccepte, .nameCard, .numberCard, .expDate, .crypto{
+                    margin-bottom: 35px;
+                }
+            }
+        }
+
+        .submit{
+            display: flex;
+            margin: 20px 0 0 300px;
+            padding: 5px;
+            width: 170px;
+            height: 40px;
+            font-size: 24px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(to left, #2a8556 0% ,#1D5E3C 100%);
+
+            &:hover{
+                font-weight: 700;
+            }
+        }
+    } 
+}

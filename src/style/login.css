@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.loginPage {
+  background-color: rgba(100, 100, 100, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 1620px;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 112px;
+  left: 230px;
+  z-index: 2000;
+}
+.loginPage .container {
+  position: relative;
+  height: 400px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  /* Par défaut, la section Sign Up est cachée */
+  /* Quand Sign Up est active */
+}
+.loginPage .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.loginPage .container .toggleButton {
+  background-color: white;
+  border: none;
+  color: #21794C;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 3px;
+}
+.loginPage .container .close-button {
+  margin: 10px 35%;
+  height: 25px;
+  width: 100px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to left, #2a8556 0%, #1D5E3C 100%);
+}
+.loginPage .container h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.loginPage .container input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.loginPage .container .signIn, .loginPage .container .signUp {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: white;
+  transition: transform 0.1s ease-in-out;
+}
+.loginPage .container .signUp {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.loginPage .container .signUp.active {
+  z-index: 10;
+  transform: translateX(0);
+  opacity: 1;
+}
+.loginPage .container .connectButton {
+  height: 30px;
+  width: 150px;
+  margin: 10px auto;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to left, #2a8556 0%, #1D5E3C 100%);
+}
+.loginPage .container p {
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -52,7 +52,7 @@ function PlantDetail({addToCartDetail}){
                     <div className="right">
                         <MoreLess setQuantity={setQuantity}/>
                         <div className="addCart">
-                            <button className="addCartButton" onClick={() => addToCartDetail(plant.name, plant.price, quantity)}>Ajouter au Panier</button>
+                            <button className="addCartButton" onClick={() => addToCartDetail(plant.name, plant.price, quantity, plant.image)}>Ajouter au Panier</button>
                         </div>
                     </div>
                 </section>

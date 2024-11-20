@@ -1,4 +1,7 @@
+@import 'mixing.scss';
+
 .cart{
+    position: relative;
     color: white;
     padding: 10px;
     background-color: #31b572;
@@ -30,10 +33,10 @@
         padding-top: 15px;
     }
 
-    button{
+    .valid{
         margin-top: 15px;
         padding: 5px;
-        width: 125px;
+        width: 150px;
         height: 35px;
         color: white;
         background-color: #31b572;
@@ -43,5 +46,35 @@
         &:hover{
             font-weight: 600;
         }
+    }
+
+    .clear{
+        margin-top: 5px;
+        padding: 5px;
+        width: 125px;
+        height: 35px;
+        color: white;
+        background-color: #31b572;
+        border: none;
+
+        &:hover{
+            font-weight: 600;
+        }
+    }
+
+    .login{
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .sentence{
+            width: 220px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        @include arrowButton;
     }
 }
