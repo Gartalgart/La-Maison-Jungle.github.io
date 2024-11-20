@@ -75,7 +75,8 @@ function App(){
           isCartActive={isCartActive}
           showLogin={showLogin}/>
         <Routes>
-          <Route path="/shoppingList" element={<ShoppingList addToCart={addToCart}/>}/>
+          <Route path="/" element={<ShoppingList addToCart={addToCart} />} />
+          <Route path="/ShoppingList" element={<ShoppingList addToCart={addToCart} />} />
           <Route path="/plant/:id" element={<PlantDetail addToCartDetail={addToCartDetail} />}/>
           <Route path="/PlantPaye" element={<PlantPaye cartItems={cartItems} clearElement={clearElement} clearCart={clearCart}/>}/>
         </Routes>
