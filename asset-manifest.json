@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/La-Maison-Jungle.github.io/static/css/main.3bbc5992.chunk.css",
+    "main.css": "/La-Maison-Jungle.github.io/static/css/main.534696a5.chunk.css",
     "main.js": "/La-Maison-Jungle.github.io/static/js/main.3893a553.chunk.js",
     "main.js.map": "/La-Maison-Jungle.github.io/static/js/main.3893a553.chunk.js.map",
     "runtime-main.js": "/La-Maison-Jungle.github.io/static/js/runtime-main.78c74657.js",
@@ -8,9 +8,9 @@
     "static/js/2.0d0f2722.chunk.js": "/La-Maison-Jungle.github.io/static/js/2.0d0f2722.chunk.js",
     "static/js/2.0d0f2722.chunk.js.map": "/La-Maison-Jungle.github.io/static/js/2.0d0f2722.chunk.js.map",
     "index.html": "/La-Maison-Jungle.github.io/index.html",
-    "precache-manifest.0f04cc3509708a875181a705fbbadac9.js": "/La-Maison-Jungle.github.io/precache-manifest.0f04cc3509708a875181a705fbbadac9.js",
+    "precache-manifest.ce62f7754b6f9efcdbb82f9949d332f5.js": "/La-Maison-Jungle.github.io/precache-manifest.ce62f7754b6f9efcdbb82f9949d332f5.js",
     "service-worker.js": "/La-Maison-Jungle.github.io/service-worker.js",
-    "static/css/main.3bbc5992.chunk.css.map": "/La-Maison-Jungle.github.io/static/css/main.3bbc5992.chunk.css.map",
+    "static/css/main.534696a5.chunk.css.map": "/La-Maison-Jungle.github.io/static/css/main.534696a5.chunk.css.map",
     "static/js/2.0d0f2722.chunk.js.LICENSE.txt": "/La-Maison-Jungle.github.io/static/js/2.0d0f2722.chunk.js.LICENSE.txt",
     "static/media/basil.jpg": "/La-Maison-Jungle.github.io/static/media/basil.dc0510aa.jpg",
     "static/media/cactus.jpg": "/La-Maison-Jungle.github.io/static/media/cactus.de9d7400.jpg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.78c74657.js",
     "static/js/2.0d0f2722.chunk.js",
-    "static/css/main.3bbc5992.chunk.css",
+    "static/css/main.534696a5.chunk.css",
     "static/js/main.3893a553.chunk.js"
   ]
 }
