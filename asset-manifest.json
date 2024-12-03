@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/La-Maison-Jungle.github.io/static/css/main.53eb08a6.chunk.css",
-    "main.js": "/La-Maison-Jungle.github.io/static/js/main.73eb87a0.chunk.js",
-    "main.js.map": "/La-Maison-Jungle.github.io/static/js/main.73eb87a0.chunk.js.map",
-    "runtime~main.js": "/La-Maison-Jungle.github.io/static/js/runtime~main.1c842cc7.js",
-    "runtime~main.js.map": "/La-Maison-Jungle.github.io/static/js/runtime~main.1c842cc7.js.map",
-    "static/js/2.1cac7cb4.chunk.js": "/La-Maison-Jungle.github.io/static/js/2.1cac7cb4.chunk.js",
-    "static/js/2.1cac7cb4.chunk.js.map": "/La-Maison-Jungle.github.io/static/js/2.1cac7cb4.chunk.js.map",
+    "main.css": "/La-Maison-Jungle.github.io/static/css/main.4e949752.chunk.css",
+    "main.js": "/La-Maison-Jungle.github.io/static/js/main.3893a553.chunk.js",
+    "main.js.map": "/La-Maison-Jungle.github.io/static/js/main.3893a553.chunk.js.map",
+    "runtime-main.js": "/La-Maison-Jungle.github.io/static/js/runtime-main.78c74657.js",
+    "runtime-main.js.map": "/La-Maison-Jungle.github.io/static/js/runtime-main.78c74657.js.map",
+    "static/js/2.0d0f2722.chunk.js": "/La-Maison-Jungle.github.io/static/js/2.0d0f2722.chunk.js",
+    "static/js/2.0d0f2722.chunk.js.map": "/La-Maison-Jungle.github.io/static/js/2.0d0f2722.chunk.js.map",
     "index.html": "/La-Maison-Jungle.github.io/index.html",
-    "precache-manifest.43beb554e89809a5fceb0187381737fa.js": "/La-Maison-Jungle.github.io/precache-manifest.43beb554e89809a5fceb0187381737fa.js",
+    "precache-manifest.c942bdfd65c8a6d3f704fa7d80e4b5ac.js": "/La-Maison-Jungle.github.io/precache-manifest.c942bdfd65c8a6d3f704fa7d80e4b5ac.js",
     "service-worker.js": "/La-Maison-Jungle.github.io/service-worker.js",
-    "static/css/main.53eb08a6.chunk.css.map": "/La-Maison-Jungle.github.io/static/css/main.53eb08a6.chunk.css.map",
+    "static/css/main.4e949752.chunk.css.map": "/La-Maison-Jungle.github.io/static/css/main.4e949752.chunk.css.map",
+    "static/js/2.0d0f2722.chunk.js.LICENSE.txt": "/La-Maison-Jungle.github.io/static/js/2.0d0f2722.chunk.js.LICENSE.txt",
     "static/media/basil.jpg": "/La-Maison-Jungle.github.io/static/media/basil.dc0510aa.jpg",
     "static/media/cactus.jpg": "/La-Maison-Jungle.github.io/static/media/cactus.de9d7400.jpg",
     "static/media/calathea.jpg": "/La-Maison-Jungle.github.io/static/media/calathea.ff132166.jpg",
@@ -20,5 +21,11 @@
     "static/media/olivier.jpg": "/La-Maison-Jungle.github.io/static/media/olivier.40fafdd8.jpg",
     "static/media/pothos.jpg": "/La-Maison-Jungle.github.io/static/media/pothos.cc60210c.jpg",
     "static/media/succulent.jpg": "/La-Maison-Jungle.github.io/static/media/succulent.463c1022.jpg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78c74657.js",
+    "static/js/2.0d0f2722.chunk.js",
+    "static/css/main.4e949752.chunk.css",
+    "static/js/main.3893a553.chunk.js"
+  ]
 }
