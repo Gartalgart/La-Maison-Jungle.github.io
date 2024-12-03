@@ -15,7 +15,7 @@
                 font-size: 32px;
                 color: #1D5E3C;
                 position: relative;
-                right: 20px;
+                right: 50px;
                 cursor: pointer;
                 z-index: 1001; // S'assure qu'il est au-dessus du cart pour le clic
             } 
@@ -30,14 +30,14 @@
     
     .cart {
         position: absolute;
-        top: 112px;
+        top: 98px;
         left: 0;
         height: 90vh;
         background-color: rgba(29, 94, 60, 0.5);
         border-radius: 0 0 10px 0;
         transform: translateX(100%); // Cache le cart hors de l'écran au début
-        transition: transform 0.3s ease; // Transition pour l'animation d'apparition
-        z-index: 1000; // S'assure qu'il est au-dessus des autres éléments
+        transition: transform 0.3s ease; 
+        z-index: 1000; 
         display: none;
         
         &.active {
@@ -114,13 +114,14 @@
     }
     .page{
         min-height: none;
+        max-width: 410px;
 
         .mainImage{
             margin-top: 50px;
             img{
                 width: 325px;
                 height: 325px;
-                margin: 25px;
+                margin: 45px;
             }
         }
 
@@ -134,11 +135,11 @@
                 
                 .hook{
                     text-align: center;
-                    margin: 25px 5px;
+                    margin: 25px 25px;
                     position: relative;
                     top: -50px;
                     right: 0;
-                    width: 400px;
+                    width: 375px;
                 
                     span{
                         font-size: 32px;
@@ -147,8 +148,8 @@
                     .titlePrice{
                         margin-bottom: 50px;
                         position: relative;
-                        bottom: 800px;
-                        left: -20px;
+                        bottom: 825px;
+                        right: 5px;
 
                         h1{
                             font-size: 32px;
@@ -171,7 +172,7 @@
                     }
 
                     .didUKnow{
-                        margin: 50px 30px 50px 0;
+                        margin: 50px 10px 50px 0;
                         
                         .title{
                             font-size: 24px;
@@ -199,7 +200,7 @@
 
                     .selectPlant{
                         .ulContaint{
-                            margin-left: 10px;
+                            margin-left: 30px;
                             ul{
                                 img{
                                     height: 100px;
@@ -210,7 +211,7 @@
                         } 
                     }
                     p{
-                        margin-right: 100px;
+                        margin-right: 70px;
                     }
                 }
 
@@ -309,6 +310,8 @@
             }
 
             .paye{
+                max-width: 375px;
+                margin-left: -100px;
                 .formulaire{
                     flex-direction: column;
                     gap: 50px;
@@ -323,7 +326,7 @@
     }
 
     .loginPage{
-        width: 415px;
+        width: 412px;
         max-height: 3637px;
         left: 0;
     }   

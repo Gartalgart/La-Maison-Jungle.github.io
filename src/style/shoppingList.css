@@ -40,7 +40,7 @@
 }
 .ShoppingList .ulPlant {
   display: flex;
-  width: 105%;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;

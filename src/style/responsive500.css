@@ -13,7 +13,7 @@
     font-size: 32px;
     color: #1D5E3C;
     position: relative;
-    right: 20px;
+    right: 50px;
     cursor: pointer;
     z-index: 1001;
   }
@@ -22,7 +22,7 @@
   }
   .cart {
     position: absolute;
-    top: 112px;
+    top: 98px;
     left: 0;
     height: 90vh;
     background-color: rgba(29, 94, 60, 0.5);
@@ -137,6 +137,7 @@
   }
   .page {
     min-height: none;
+    max-width: 410px;
   }
   .page .mainImage {
     margin-top: 50px;
@@ -144,7 +145,7 @@
   .page .mainImage img {
     width: 325px;
     height: 325px;
-    margin: 25px;
+    margin: 45px;
   }
   .page .container {
     display: flex;
@@ -156,11 +157,11 @@
   }
   .page .container .top .hook {
     text-align: center;
-    margin: 25px 5px;
+    margin: 25px 25px;
     position: relative;
     top: -50px;
     right: 0;
-    width: 400px;
+    width: 375px;
   }
   .page .container .top .hook span {
     font-size: 32px;
@@ -168,8 +169,8 @@
   .page .container .top .hook .titlePrice {
     margin-bottom: 50px;
     position: relative;
-    bottom: 800px;
-    left: -20px;
+    bottom: 825px;
+    right: 5px;
   }
   .page .container .top .hook .titlePrice h1 {
     font-size: 32px;
@@ -187,7 +188,7 @@
     text-align: center;
   }
   .page .container .top .hook .didUKnow {
-    margin: 50px 30px 50px 0;
+    margin: 50px 10px 50px 0;
   }
   .page .container .top .hook .didUKnow .title {
     font-size: 24px;
@@ -208,14 +209,14 @@
     margin-left: auto;
   }
   .page .container .bottom .left .selectPlant .ulContaint {
-    margin-left: 10px;
+    margin-left: 30px;
   }
   .page .container .bottom .left .selectPlant .ulContaint ul img {
     height: 100px;
     width: 100px;
   }
   .page .container .bottom .left p {
-    margin-right: 100px;
+    margin-right: 70px;
   }
   .page .container .bottom .right {
     width: 100vw;
@@ -282,6 +283,10 @@
   .page2 .order_form .orderSummary .container .article, .page2 .order_form .orderSummary .container .tax, .page2 .order_form .orderSummary .container .totale {
     gap: 150px;
   }
+  .page2 .order_form .paye {
+    max-width: 375px;
+    margin-left: -100px;
+  }
   .page2 .order_form .paye .formulaire {
     flex-direction: column;
     gap: 50px;
@@ -291,7 +296,7 @@
     right: 225px;
   }
   .loginPage {
-    width: 415px;
+    width: 412px;
     max-height: 3637px;
     left: 0;
   }

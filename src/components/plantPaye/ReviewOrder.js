@@ -14,7 +14,7 @@ function ReviewOder({cartItems, clearElement}){
                 {cartItems.map((item, index) => (
                     <li key={index} className="liReview">
                         <div className="review">
-                            <img src={item.image} alt={`${item.name} image`} className="imagePlant"/>
+                            <img src={item.image} alt={item.name} className="imagePlant"/>
                             <span>Quantiter: {item.quantity}</span>
                             <span>Prix: {item.price}€</span>
                             <button className="supp" onClick={() => clearElement(item.name)}>supprimer</button>

@@ -16,7 +16,6 @@ function App(){
   const [isLoginVisible, setIsLoginVisible] = useState(false);
   const [isConnectActive, setIsConnectActive] = useState(true);
 
-
   const addToCart = (name, price, image) => {
     setCartItems((prevItems) => {//prevItems représente la version actuelle de cartItems (le panier avant l’ajout de la nouvelle plante).
       const existingItem = prevItems.find((item) => item.name === name);//find() parcourt prevItems pour vérifier s'il existe un article dont le name correspond à la plante ajoutée. Si une plante avec le même name est déjà présente dans prevItems, elle est stockée dans existingItem. Si la plante n'existe pas encore, existingItem sera undefined.
@@ -66,7 +65,7 @@ function App(){
 
   return (
     <div>
-      <Banner toggleCart={toggleCart}/>
+      <Banner toggleCart={toggleCart} />
       <div className="main">
         <Cart 
           cartItems={cartItems} 

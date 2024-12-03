@@ -21,7 +21,7 @@ function PlantDetail({addToCartDetail}){
     return(
         <section className="page">
             <div className="mainImage">
-                    <img src={plant.image} alt={`${plant.name} image`} className="imagePlant"/>
+                    <img src={plant.image} alt={plant.name} className="imagePlant"/>
             </div>
             <div className="container">
                 <section className="top">

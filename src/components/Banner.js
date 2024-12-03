@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //import la librairy fontawesome
-import { faBars } from '@fortawesome/free-solid-svg-icons'; //imort individuellement l'icon
+import { faBars } from '@fortawesome/free-solid-svg-icons'; //import individuellement l'icon
 
 function Banner({toggleCart}){
     const title = 'La maison jungle';

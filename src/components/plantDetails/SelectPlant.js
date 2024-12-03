@@ -13,7 +13,7 @@ function SelectPlant({ id, category }){
                     {filteredPlants.map((plant) => (
                         <li key={plant.id}>
                             <Link to={`/plant/${plant.id}`} >
-                                <img src={plant.image} alt={`${plant.name}image`} className="imagePlantSmall" />
+                                <img src={plant.image} alt={plant.name} className="imagePlantSmall" />
                             </Link>  
                         </li>
                     ))} 

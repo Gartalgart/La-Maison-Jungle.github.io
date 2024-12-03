@@ -6,7 +6,7 @@ function PlantItem({id, image, name, price, water, light, addToCart}){
     return (
         <li key={id} className="plant">
             <div className="plantContainer">
-                <img src={image} alt={`${name} image`} className="imagePlant"/>
+                <img src={image} alt={name} className="imagePlant"/>
                 <div className="details">
                     <Link to={`/plant/${id}`} onClick={() => console.log("Link clicked")}>Détails</Link> {/* Redirection vers la page de détail */}
                 </div>

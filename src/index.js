@@ -6,7 +6,7 @@ import { BrowserRouter as Router} from 'react-router-dom'; // Permet d'imbriquer
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/La-Maison-Jungle.github.io">
       <App />
     </Router>
   </React.StrictMode>,
