@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/La-Maison-Jungle.github.io/precache-manifest.3dcfff21b81234c448446b33e573e914.js"
+  "/La-Maison-Jungle.github.io/precache-manifest.e6f282a48b47bb2aec3b59947fb7ddf6.js"
 );
 
 self.addEventListener('message', (event) => {
